@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Example</title>
+</head>
+<body>
+   <!-- Create an HTML file that contains a form  -->
+
+<h3>Enter Your Details</h3>
+
+<form>
+  <label>Name:</label>
+  <input type="text" id="name"><br><br>
+
+  <label>Age:</label>
+  <input type="number" id="age"><br><br>
+
+  <label>Contact Number:</label>
+  <input type="text" id="contact"><br><br>
+
+  <label>Email:</label>
+  <input type="email" id="email"><br><br>
+</form>
+
+<button onclick="showDetails()">VIEW</button>
+
+<h3>Your Details:</h3>
+<p id="output"></p>
+
+<script>
+function showDetails() {
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let contact = document.getElementById("contact").value;
+  let email = document.getElementById("email").value;
+  document.getElementById("output").innerText =
+    "Name: " + name + "\n" +
+    "Age: " + age + "\n" +
+    "Contact Number: " + contact + "\n" +
+    "Email: " + email;
+}
+</script>
+
+</body>
+</html>
