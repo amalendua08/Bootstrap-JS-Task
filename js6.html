@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<input type="text" id="inputValue" placeholder="Enter something">
+<button onclick="checkValue()">Check</button>
+
+<p id="output"></p>
+
+<script>
+function checkValue() {
+  let value = document.getElementById("inputValue").value;
+  if (value !== "" && !isNaN(value)) {
+    document.getElementById("output").innerText = "Yes,it is a Number";
+    document.getElementById("output").style.color = "green";
+  } else {
+    document.getElementById("output").innerText = "No,it is not a number";
+    document.getElementById("output").style.color = "red";
+  }
+}
+</script>
+
+</body>
+</html>
