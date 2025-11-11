@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Table with Alternate Row Colors</title>
+<style>
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  th {
+    background-color:darkgreen; 
+    color: white;
+  }
+
+  /* Alternate row coloring */
+  tr:nth-child(odd) {
+    background-color: lightgrey;  
+  }
+
+  tr:nth-child(even) {
+    background-color: white;  
+  }
+
+  tr:hover {
+    background-color: lightgreen; 
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Employee Details</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Department</th>
+  </tr>
+  <tr>
+    <td>Amalendu A.</td>
+    <td>Developer</td>
+    <td>Engineering</td>
+  </tr>
+  <tr>
+    <td>Ravi Kumar</td>
+    <td>Designer</td>
+    <td>Product</td>
+  </tr>
+  <tr>
+    <td>Neha Thomas</td>
+    <td>Tester</td>
+    <td>QA</td>
+  </tr>
+  <tr>
+    <td>Rahul Menon</td>
+    <td>Manager</td>
+    <td>Operations</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
