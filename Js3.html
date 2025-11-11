@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<!-- Create an HTML page that contains a text input and a button.
+The user will enter numbers separated by commas (for example: 24,35,36) in the text box.
+
+When the user clicks the button, each number should be displayed one below the other (like this):
+24  
+35  
+36 -->
+<input type="text" id="numbers" placeholder="Enter numbers like 24,35,36">
+<button onclick="showNumbers()">Show</button>
+<div id="output"></div>
+<script>
+function showNumbers() {
+  let text = document.getElementById("numbers").value;
+  let numArray = text.split(",");
+  document.getElementById("output").innerHTML = "";
+  for (let i = 0; i < numArray.length; i++) {
+    document.getElementById("output").innerHTML += numArray[i].trim() + "<br>";
+  }
+}
+</script>
+
+</body>
+</html>
