@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<img id="Image"  src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80" alt="Bird">
+<br><br>
+<button onclick="showSource()">Show Image Source</button>
+<p id="output"></p>
+<script>
+function showSource() {
+  let img = document.getElementById("Image");
+  let src = img.src;
+  document.getElementById("output").innerText = "Image Source: " + src;
+}
+</script>
+</body>
+</html>
+
